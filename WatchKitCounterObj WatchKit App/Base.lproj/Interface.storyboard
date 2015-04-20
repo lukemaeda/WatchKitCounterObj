@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label height="38" alignment="center" text="0" textAlignment="center" id="14N-zb-KFP">
+                            <fontDescription key="font" type="system" pointSize="39"/>
+                        </label>
+                        <label width="1" alignment="center" text="Saved N" textAlignment="center" id="Omt-tC-hS2"/>
+                        <group width="1" alignment="left" id="t20-gD-Blb">
+                            <items>
+                                <button width="67" alignment="left" title="Hit" id="9bN-Rd-fQe">
+                                    <variation key="device=watch42mm" width="79"/>
+                                    <connections>
+                                        <action selector="incrementCounter" destination="AgC-eL-Hgc" id="R5F-56-sah"/>
+                                    </connections>
+                                </button>
+                                <button width="67" alignment="left" title="Clear" id="b2N-PW-kKJ">
+                                    <connections>
+                                        <action selector="clearCounter" destination="AgC-eL-Hgc" id="b4v-jb-IbE"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Save" id="DwM-8y-LMI">
+                            <connections>
+                                <action selector="saveCounter" destination="AgC-eL-Hgc" id="V8B-tv-4w3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="counterLabel" destination="14N-zb-KFP" id="ozW-zJ-GyH"/>
+                        <outlet property="savedNotificationLabel" destination="Omt-tC-hS2" id="j96-kR-5uy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="151" y="191"/>
+        </scene>
+    </scenes>
+</document>

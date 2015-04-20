@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Y1-ME-XmZ">
+                                <rect key="frame" x="204" y="149" width="192" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7f6-VO-LCv">
+                                <rect key="frame" x="261.5" y="255" width="77" height="168.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="141"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7f6-VO-LCv" firstAttribute="top" secondItem="1Y1-ME-XmZ" secondAttribute="bottom" constant="20" id="6rv-m5-39i"/>
+                            <constraint firstAttribute="centerX" secondItem="7f6-VO-LCv" secondAttribute="centerX" id="EgC-1J-fgO"/>
+                            <constraint firstAttribute="centerX" secondItem="1Y1-ME-XmZ" secondAttribute="centerX" id="Gt8-1u-VCk"/>
+                            <constraint firstItem="1Y1-ME-XmZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="129" id="vaM-yI-HCh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="7f6-VO-LCv" id="ip0-0F-TWl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="56"/>
+        </scene>
+    </scenes>
+</document>
